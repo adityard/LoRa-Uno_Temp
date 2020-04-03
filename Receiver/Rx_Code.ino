@@ -12,6 +12,8 @@ void setup()
 }
 void loop() 
 {
+  // To store the received message in a string, uncomment line 16 and 24.
+  // String str="";
   int packetSize = LoRa.parsePacket();
   if (packetSize) 
   {
@@ -19,6 +21,7 @@ void loop()
     while (LoRa.available()) 
     {
       Serial.print((char)LoRa.read());
+      //str=str+((char)LoRa.read());    
     }
     Serial.print("' with RSSI ");
     Serial.println(LoRa.packetRssi());
