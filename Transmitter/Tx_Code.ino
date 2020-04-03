@@ -23,7 +23,7 @@ void loop()
 
   //Uncomment Line 25 and 26 for temperature in both Celcius and Farenhite
   //float tempf = (tempc*9.0)/5.0 + 32;
-  // msg  = msg + " or "+ String(tempf) + "°F"
+  // msg  = msg + "/"+ String(tempf) + "°F"
    
   Serial.print("Sending message ");
   Serial.println(msg);
